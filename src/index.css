@@ -3,7 +3,6 @@
 }
 
 :root {
-	min-height: 100vh;
 	font-family: Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
@@ -19,6 +18,13 @@ body {
 	margin: 0;
 	color: white;
 }
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* @media (prefers-color-scheme: light) {
 	:root {

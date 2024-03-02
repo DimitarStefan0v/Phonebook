@@ -1,10 +1,12 @@
+import classes from './Card.module.css';
+
 const Card = ({ person }) => {
 	return (
-		<>
-			<div>{person.name}</div>
+		<div className={classes.card}>
+			<div className={classes.heading}>{person.name}</div>
 			<div>{person.email}</div>
 			<div>{person.phone}</div>
-		</>
+		</div>
 	);
 };
 
