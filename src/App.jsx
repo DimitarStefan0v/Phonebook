@@ -1,4 +1,4 @@
-import Card from './components/Card/Card';
+import ContactsList from './components/ContactsList/ContactsList';
 
 const dummyData = [
 	{
@@ -36,7 +36,7 @@ const dummyData = [
 const App = () => {
 	return (
 		<main>
-            {dummyData.map(x => <Card key={x.name} person={x} />)}
+            <ContactsList contacts={dummyData} />
 		</main>
 	);
 };
