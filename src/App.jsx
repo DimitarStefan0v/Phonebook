@@ -1,4 +1,5 @@
 import ContactsList from './components/ContactsList/ContactsList';
+import ContactForm from './components/ContactForm/ContactForm';
 
 const dummyData = [
 	{
@@ -41,6 +42,7 @@ const dummyData = [
 const App = () => {
 	return (
 		<main>
+            <ContactForm />
             <ContactsList contacts={dummyData} />
 		</main>
 	);
