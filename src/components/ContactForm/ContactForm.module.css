@@ -1,10 +1,11 @@
 .form {
-    text-align: center;
     margin: 2rem auto;
-    max-width: 300px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    background-color: rgb(60, 60, 252);
+    padding: 1rem;
 }
 
 .form-control {
@@ -14,43 +15,45 @@
 
 .input {
     border-radius: 8px;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+    font-size: 1.3rem;
+    padding: 0.5rem 0.7rem;
     width: 100%;
     background-color: transparent;
     position: relative;
     color: white;
     z-index: 3;
-    border: 2px solid white;
+    border: 1px solid white;
 }
 
 .placeholder {
     color: white; 
     background-color: transparent;
-    font-size: 1.1rem;
-    line-height: 2.5rem;
     position: absolute;
+    font-size: 1.1rem;
     top: 0;
-    left: 0px;;
+    left: 0;
+    padding-left: 0.7rem;
+    padding-top: 0.4rem;
     z-index: 1;
     background-color: transparent;
-    padding: 0.3rem 1rem;
     transition: all 0.2s ease-in-out;
 }
 
-input:focus {
+.input:focus {
     color: rgb(62, 211, 62);
-    outline: 2px solid rgb(62, 211, 62);
-    border: 2px solid rgb(62, 211, 62);
-    
+    outline: 1px solid rgb(62, 211, 62);
+    border: 1px solid rgb(62, 211, 62); 
+    vertical-align: bottom;
 }
 
-input:focus + .placeholder,
-input:valid + .placeholder {
+.input:focus + .placeholder,
+.input:valid + .placeholder {
     z-index: 5;
     color: rgb(62, 211, 62);
-    transform: translate(-0px, -20px) scale(0.7);
-    background-color: rgb(60, 60, 252)
+    transform: translate(5px, -15px) scale(0.9);
+    background-color: rgb(60, 60, 252);
+    padding: 0 1rem;
+    line-height: normal;
 }
  
 
