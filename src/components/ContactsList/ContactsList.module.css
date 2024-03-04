@@ -1,0 +1,15 @@
+.contacts {
+	width: 300px;
+	display: grid;
+	place-items: center;
+	grid-template-columns: 1fr;
+	row-gap: 1rem;
+    margin: 0 auto;
+}
+
+@media (width >= 550px) {
+	.contacts {
+        width: 550px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
